@@ -40,3 +40,23 @@
     writing-mode: horizontal-tb !important;
 }
 
+.iomadcoursesearchform .icons-collapse-expand.collapsed .expanded-icon,
+.iomadcoursesearchform .icons-collapse-expand.collapsed .collapsed-icon,
+.datesearchform  .icons-collapse-expand.collapsed .expanded-icon,
+.datesearchform .icons-collapse-expand.collapsed .collapsed-icon{
+    font-size: small;
+}
+
+.iomadcoursesearchform h3,
+.datesearchform h3 {
+    font-size: medium;
+}
+
+.iomadcoursesearchform .mform .form-inline .form-control,
+.iomadcoursesearchform .mform .form-inline .custom-select,
+.datesearchform .mform .form-inline .form-control,
+.datesearchform .mform .form-inline .custom-select {
+    max-width:75%;
+}
+
+
