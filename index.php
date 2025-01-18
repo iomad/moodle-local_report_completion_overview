@@ -703,32 +703,32 @@ if (!$bycourse) {
             if (empty($usercourse->timeenrolled)) {
                 $coursesummary['enrolled'] = get_string('never');
             } else {
-                $coursesummary['enrolled'] = date($CFG->iomad_date_format, $usercourse->timeenrolled);
+                $coursesummary['enrolled'] = userdate($usercourse->timeenrolled, $CFG->iomad_date_format);
             }
             if (empty($usercourse->timestarted)) {
                 $coursesummary['timestarted'] = get_string('never');
             } else {
-                $coursesummary['timestarted'] = date($CFG->iomad_date_format, $usercourse->timestarted);
+                $coursesummary['timestarted'] = userdate($usercourse->timestarted, $CFG->iomad_date_format);
             }
             if (empty($usercourse->timecompleted)) {
                 $coursesummary['timecompleted'] = get_string('never');
             } else {
-                $coursesummary['timecompleted'] = date($CFG->iomad_date_format, $usercourse->timecompleted);
+                $coursesummary['timecompleted'] = userdate($usercourse->timecompleted, $CFG->iomad_date_format);
             }
             if (empty($usercourse->lastcompleted)) {
                 $coursesummary['lastcompleted'] = get_string('never');
             } else {
-                $coursesummary['lastcompleted'] = date($CFG->iomad_date_format, $usercourse->lastcompleted);
+                $coursesummary['lastcompleted'] = userdate($usercourse->lastcompleted, $CFG->iomad_date_format);
             }
             if (empty($usercourse->timeexpires)) {
                 $coursesummary['timeexpires'] = '';
             } else {
-                $coursesummary['timeexpires'] = date($CFG->iomad_date_format, $usercourse->timeexpires);
+                $coursesummary['timeexpires'] = userdate($usercourse->timeexpires, $CFG->iomad_date_format);
             }
             if (empty($usercourse->timeexpired)) {
                 $coursesummary['timeexpired'] = '';
             } else {
-                $coursesummary['timeexpired'] = date($CFG->iomad_date_format, $usercourse->timeexpired);
+                $coursesummary['timeexpired'] = userdate($usercourse->timeexpired, $CFG->iomad_date_format);
             }
             $coursesummary['finalscore'] = $usercourse->finalscore;
 
@@ -848,32 +848,32 @@ if (!$bycourse) {
             if (empty($usercourse->timeenrolled)) {
                 $coursesummary['enrolled'] = get_string('never');
             } else {
-                $coursesummary['enrolled'] = date($CFG->iomad_date_format, $usercourse->timeenrolled);
+                $coursesummary['enrolled'] = userdate($usercourse->timeenrolled, $CFG->iomad_date_format);
             }
             if (empty($usercourse->timestarted)) {
                 $coursesummary['timestarted'] = get_string('never');
             } else {
-                $coursesummary['timestarted'] = date($CFG->iomad_date_format, $usercourse->timestarted);
+                $coursesummary['timestarted'] = userdate($usercourse->timestarted, $CFG->iomad_date_format);
             }
             if (empty($usercourse->timecompleted)) {
                 $coursesummary['timecompleted'] = get_string('never');
             } else {
-                $coursesummary['timecompleted'] = date($CFG->iomad_date_format, $usercourse->timecompleted);
+                $coursesummary['timecompleted'] = userdate($usercourse->timecompleted, $CFG->iomad_date_format);
             }
             if (empty($usercourse->lastcompleted)) {
                 $coursesummary['lastcompleted'] = get_string('never');
             } else {
-                $coursesummary['lastcompleted'] = date($CFG->iomad_date_format, $usercourse->lastcompleted);
+                $coursesummary['lastcompleted'] = userdate($usercourse->lastcompleted, $CFG->iomad_date_format);
             }
             if (empty($usercourse->timeexpires)) {
                 $coursesummary['timeexpires'] = '';
             } else {
-                $coursesummary['timeexpires'] = date($CFG->iomad_date_format, $usercourse->timeexpires);
+                $coursesummary['timeexpires'] = userdate($usercourse->timeexpires, $CFG->iomad_date_format);
             }
             if (empty($usercourse->timeexpired)) {
                 $coursesummary['timeexpired'] = '';
             } else {
-                $coursesummary['timeexpired'] = date($CFG->iomad_date_format, $usercourse->timeexpired);
+                $coursesummary['timeexpired'] = userdate($usercourse->timeexpired, $CFG->iomad_date_format);
             }
             $coursesummary['finalscore'] = $usercourse->finalscore;
 
